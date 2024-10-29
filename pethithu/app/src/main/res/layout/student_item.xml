@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Name Section -->
+    <TextView
+        android:id="@+id/labelStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/studentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelStudentName"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelStudentName"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Major Section -->
+    <TextView
+        android:id="@+id/labelStudentMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major:"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/studentName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/studentMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Science"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/studentName"
+        app:layout_constraintStart_toEndOf="@id/labelStudentMajor"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelStudentMajor"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Address Section -->
+    <TextView
+        android:id="@+id/labelStudentAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/studentMajor"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/studentAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123 Main St, Cityville"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/studentMajor"
+        app:layout_constraintStart_toEndOf="@id/labelStudentAddress"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelStudentAddress"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Gender Section -->
+    <TextView
+        android:id="@+id/labelStudentGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/studentAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/studentGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/studentAddress"
+        app:layout_constraintStart_toEndOf="@id/labelStudentGender"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelStudentGender"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Date Section -->
+    <TextView
+        android:id="@+id/labelStudentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/studentGender"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/studentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01/01/2024"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/studentGender"
+        app:layout_constraintStart_toEndOf="@id/labelStudentDate"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelStudentDate"
+        android:layout_marginStart="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
